@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" backupStaticAttributes="false" processIsolation="false" convertErrorsToExceptions="true" convertWarningsToExceptions="true" convertNoticesToExceptions="false" stopOnError="true" stopOnFailure="true" stopOnIncomplete="true" printerClass="YtResultPrinter" printerFile="setup/printer.php" bootstrap="setup/bootstrap.php" timeoutForLargeTests="1000" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd" colors="true">
+	<testsuites>
+		<testsuite name="NoGUI">
+			<directory suffix=".php">./Init/</directory>
+			<directory suffix=".php">./Base/</directory>
+			<directory suffix=".php">./Integrations/</directory>
+			<directory suffix=".php">./Settings/</directory>
+			<directory suffix=".php">./App/</directory>
+		</testsuite>
+		<testsuite name="All">
+			<directory suffix=".php">./Init/</directory>
+			<directory suffix=".php">./Base/</directory>
+			<directory suffix=".php">./Integrations/</directory>
+			<directory suffix=".php">./Settings/</directory>
+			<directory suffix=".php">./App/</directory>
+			<directory suffix=".php">./Gui/</directory>
+		</testsuite>
+		<testsuite name="Init">
+			<directory suffix=".php">./Init/</directory>
+		</testsuite>
+		<testsuite name="Base">
+			<directory suffix=".php">./Base/</directory>
+		</testsuite>
+		<testsuite name="Integrations">
+			<directory suffix=".php">./Integrations/</directory>
+		</testsuite>
+		<testsuite name="Settings">
+			<directory suffix=".php">./Settings/</directory>
+		</testsuite>
+		<testsuite name="App">
+			<directory suffix=".php">./App/</directory>
+		</testsuite>
+		<testsuite name="Gui">
+			<directory suffix=".php">./Gui/</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

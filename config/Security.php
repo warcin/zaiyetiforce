@@ -7,7 +7,7 @@
  * @package Config
  *
  * @copyright YetiForce S.A.
- * @license   YetiForce Public License 5.0 (licenses/LicenseEN.txt or yetiforce.com)
+ * @license   YetiForce Public License 6.5 (licenses/LicenseEN.txt or yetiforce.com)
  */
 
 namespace Config;
@@ -170,7 +170,7 @@ class Security
 	public static $cspHeaderTokenTime = '5 minutes';
 
 	/** Allowed domains for loading images, used in CSP. */
-	public static $allowedImageDomains = [];
+	public static $allowedImageDomains = ['*.tile.openstreetmap.org'];
 
 	/**
 	 * Specifies valid parents that may embed a page using <frame>, <iframe>, <object>, <embed> or <applet> and validate referer.
